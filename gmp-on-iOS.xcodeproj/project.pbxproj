@@ -14,6 +14,7 @@
 		235C1EFA2043568D0088FBF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235C1EF82043568D0088FBF3 /* LaunchScreen.storyboard */; };
 		235C1F052043568D0088FBF3 /* gmp_on_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C1F042043568D0088FBF3 /* gmp_on_iOSTests.swift */; };
 		235C1F102043568D0088FBF3 /* gmp_on_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C1F0F2043568D0088FBF3 /* gmp_on_iOSUITests.swift */; };
+		235C1F1F204356C40088FBF3 /* libgmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C1F1E204356C40088FBF3 /* libgmp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		235C1F0B2043568D0088FBF3 /* gmp-on-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gmp-on-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235C1F0F2043568D0088FBF3 /* gmp_on_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmp_on_iOSUITests.swift; sourceTree = "<group>"; };
 		235C1F112043568D0088FBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235C1F1E204356C40088FBF3 /* libgmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgmp.framework; path = Frameworks/libgmp.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235C1F1F204356C40088FBF3 /* libgmp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				235C1F032043568D0088FBF3 /* gmp-on-iOSTests */,
 				235C1F0E2043568D0088FBF3 /* gmp-on-iOSUITests */,
 				235C1EED2043568D0088FBF3 /* Products */,
+				235C1F1D204356C30088FBF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				235C1F112043568D0088FBF3 /* Info.plist */,
 			);
 			path = "gmp-on-iOSUITests";
+			sourceTree = "<group>";
+		};
+		235C1F1D204356C30088FBF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				235C1F1E204356C40088FBF3 /* libgmp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,10 +439,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "gmp-on-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.hungcat.gmp-on-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/GMP";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,10 +458,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "gmp-on-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.hungcat.gmp-on-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/GMP";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

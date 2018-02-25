@@ -1,0 +1,5 @@
+module GMP [system][extern_c] {
+    umbrella header "umbrella-gmp.h"
+    export *
+    module * { export * }
+}
