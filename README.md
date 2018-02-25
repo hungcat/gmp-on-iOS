@@ -11,6 +11,7 @@ Swift code using gmp c library.
 
 ## Comments
 どうやら#defineで定義された関数(mpz_init等)が見えない模様
+
 求）原因, 解決方法
 
 ## Author
