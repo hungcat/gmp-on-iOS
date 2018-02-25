@@ -14,6 +14,8 @@ Swift code using gmp c library.
 
 求）原因, 解決方法
 
+~~Objective-Cならframework入れるだけでいいしマクロ関数も使えるのは内緒~~
+
 ## Author
 
 [hungcat](https://github.com/hungcat)
